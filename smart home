@@ -1,0 +1,63 @@
+import time
+
+class SmartHomeAutomation:
+    def __init__(self):
+        self.lights = False
+        self.air_conditioner = False
+        self.heater = False
+        self.security_system = False
+
+    def turn_on_lights(self):
+        print("Turning on the lights...")
+        self.lights = True
+
+    def turn_off_lights(self):
+        print("Turning off the lights...")
+        self.lights = False
+
+    def turn_on_air_conditioner(self):
+        print("Turning on the air conditioner...")
+        self.air_conditioner = True
+
+    def turn_off_air_conditioner(self):
+        print("Turning off the air conditioner...")
+        self.air_conditioner = False
+
+    def turn_on_heater(self):
+        print("Turning on the heater...")
+        self.heater = True
+
+    def turn_off_heater(self):
+        print("Turning off the heater...")
+        self.heater = False
+
+    def activate_security_system(self):
+        print("Activating the security system...")
+        self.security_system = True
+
+    def deactivate_security_system(self):
+        print("Deactivating the security system...")
+        self.security_system = False
+
+def main():
+    home = SmartHomeAutomation()
+
+    # Simulate user behavior
+    home.turn_on_lights()
+    time.sleep(2)
+    home.turn_off_lights()
+    time.sleep(2)
+    home.turn_on_air_conditioner()
+    time.sleep(2)
+    home.turn_off_air_conditioner()
+    time.sleep(2)
+    home.turn_on_heater()
+    time.sleep(2)
+    home.turn_off_heater()
+    time.sleep(2)
+    home.activate_security_system()
+    time.sleep(2)
+    home.deactivate_security_system()
+
+if __name__ == "__main__":
+    main()
